@@ -1,0 +1,100 @@
+body{
+	margin: 0;
+}
+
+/* NAVBAR */
+
+a{
+	text-decoration: none;
+	color: black;
+}
+.navbar-main{
+	background-color: #AA9839;
+	top: 0;
+	width: 100%;
+	position: fixed;
+}
+
+.navbar-items{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	align-items: center;
+}
+
+.items{
+	padding: 20px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.push{
+	margin-left: auto;
+}
+
+.mr-width{
+	width: 80px;
+}
+
+@media only screen and (max-width: 600px){
+	.navbar-items{
+		padding: 0;
+	}
+
+	.items{
+		padding: 0.5em;
+		font-size: 1em;
+	}
+	
+}
+
+/*COVER*/
+
+.cover{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-image: url(https://images.pexels.com/photos/1435737/pexels-photo-1435737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;
+}
+
+.title{
+	text-align: center;
+	margin: 0;
+	font-size: 3rem;
+	font-style: italic;
+	font-weight: bold;
+	color: #AA9839;
+	text-shadow: 1px 1px 1px black;
+}
+
+.line{
+	border: #AA9839 solid;
+	width: 10%;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+button{
+	margin: 5px;
+	padding: 1.5em;
+	width: 10rem;
+	background-color: #AA9839;
+	border: white solid 1px;
+	border-radius: 15px;
+	font-size: 15px;
+}
+
+button:hover{
+	background-color: rgba(170,152,57,0.9);
+	border-width: 1.5px;
+}
+
+@media only screen and (max-width: 700px){
+	.cover{
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
